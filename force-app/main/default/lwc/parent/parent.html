@@ -1,0 +1,10 @@
+<template>
+    <template for:each={listGoal} for:item="goal">
+        <c-prueba key={goal}>
+        </c-prueba>
+    </template>
+    <lightning-button variant="brand" label="Add a goal" title="Primary action" onclick={addInput}
+        class="slds-m-left_x-small"></lightning-button>
+    <lightning-button variant="success" label="Save" title="Primary action" onclick={saveGoal}
+        class="slds-m-left_x-small"></lightning-button>
+</template>

@@ -1,0 +1,5 @@
+<apex:page controller="SampleVFController">
+    <apex:form >
+        <apex:commandButton value="Click" action="{!openLightningComponent}"/>
+    </apex:form>
+</apex:page>

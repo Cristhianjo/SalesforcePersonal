@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="Certificate Scope: " icon-name="standard:task">
+            <div class="slds-grid slds-gutters slds-wrap" style="max-width: 1000px; width: 80%; margin: 0 auto;">
+                    <div class="slds-form-element slds-col slds-size_3-of-3">
+                            <lightning-textarea class="certificateScope" onchange={onChangeTextarea} placeholder="Enter Text">
+                            </lightning-textarea>
+                    </div>
+            </div>
+            <template if:true={areDetailsVisible}>
+                <lightning-button variant="success" label="Success" title="Successful action" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+            </template>
+    </lightning-card>
+</template>

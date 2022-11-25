@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Products Picker" icon-name="standard:product" class="slds-var-p-horizontal_x-small">
+        <div class="slds-table--header-fixed_container" style="height: 200px;">
+                <lightning-datatable 
+                    key-field="id"
+                    data={data} 
+                    columns={columns}
+                    onrowaction={handleRowAction}
+                    oncellchange={handleCellChange}
+                    hide-checkbox-column
+                    suppress-bottom-bar
+                    read-only={isDisabled}  
+                ></lightning-datatable>
+        </div>
+    </lightning-card>
+</template>

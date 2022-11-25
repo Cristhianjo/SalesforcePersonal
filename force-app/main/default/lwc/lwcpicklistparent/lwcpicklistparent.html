@@ -1,0 +1,12 @@
+<template>
+    <lightning-card variant="Narrow" title="Pick List">
+        <div class="slds-p-horizontal_small">
+            <c-lwcmultipicklist onselectoption={handleSelectOption} options={options} selected-value={selectedValue}
+                label="Single Select Pick List"></c-lwcmultipicklist>
+        </div>
+        <div class="slds-p-horizontal_small">
+            <c-lwcmultipicklist multi-select="true" onselectoption={handleSelectOptionList} options={options}
+                selected-value={selectedValue} label="multiSelect Pick List"></c-lwcmultipicklist>
+        </div>
+    </lightning-card>
+</template>

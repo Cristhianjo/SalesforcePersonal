@@ -1,0 +1,8 @@
+<design:component label="Three Region Custom">
+    <flexipage:template >
+        <flexipage:region name="top_col" label="Top Region" defaultWidth="LARGE"/>
+        <flexipage:region name="left_col" label="Left Region" defaultWidth="LARGE"/>
+        <flexipage:region name="rigth_col" label="Left Region" defaultWidth="LARGE"/>
+        <flexipage:region name="bottom_col" label="bottom Region" defaultWidth="LARGE"/>
+    </flexipage:template>
+</design:component>

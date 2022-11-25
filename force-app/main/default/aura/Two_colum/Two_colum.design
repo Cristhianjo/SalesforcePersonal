@@ -1,0 +1,10 @@
+<design:component label="Two Region Custom">
+    <flexipage:template >
+        <!-- The default width for the "left" region is "MEDIUM". In tablets,
+        the width is "SMALL" -->
+        <flexipage:region name="left_col" label="Left Region" defaultWidth="Large"/>
+        
+         <flexipage:region name="rigth_col" label="Left Region" defaultWidth="Large"/>
+        <flexipage:region name="top_col" label="Top Region" defaultWidth="Large"/>
+       </flexipage:template>
+</design:component>

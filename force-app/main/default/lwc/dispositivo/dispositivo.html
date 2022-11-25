@@ -1,0 +1,79 @@
+<template>
+    <article class="slds-card">
+        <lightning-record-view-form record-id={recordId} object-api-name="Contact">
+            <div class="slds-grid slds-gutters">
+                <!--Primer Componente-->
+                <div class="slds-col">
+                    <lightning-card class="my-card" icon-name="standard:opportunity" title="Cotización">
+                        <div class="slds-p-left_medium slds-m-bottom_xxx-small" style="margin-bottom: 25px;">
+                            <div class="slds-size_1-of-2">
+                                <lightning-input label="Nombre" value={dato1} readonly=""></lightning-input>
+                            </div>
+                            <div class="slds-size_1-of-2">
+                                <lightning-input label="Estatus" value={dato1} readonly=""></lightning-input>
+                            </div>
+                            <div class="slds-size_1-of-2">
+                                <lightning-input label="Importe" value={dato3} readonly=""></lightning-input>
+                            </div>
+                            <div class="slds-size_1-of-2">
+                                <lightning-input label="Folio de Cotización" value={dato4} readonly="">
+                                </lightning-input>
+                            </div>
+                            <div class="slds-size_1-of-2">
+                                <lightning-input label="Canal" value={dato5} readonly=""></lightning-input>
+                            </div>
+                        </div>
+                    </lightning-card>
+                </div>
+                <!--Segundo Componente-->
+                <div class="slds-col">
+                    <lightning-card class="my-card" icon-name="custom:custom31" title="Dispositivo OBMII">
+                        <div class="slds-p-left_medium slds-m-bottom_x-small" style="margin-bottom: 25px;">
+                            <div class="slds-size_1-of-2">
+                                <lightning-input label="IDIMEI" value={dato1} readonly=""></lightning-input>
+                            </div>
+                            <div class="slds-size_1-of-2">
+                                <label>Activo</label>
+                                <lightning-input type="checkbox" checked={dato2} disabled readonly=""></lightning-input>
+                            </div>
+                            <div class="slds-size_1-of-2">
+                                <lightning-input label="Estado de Entrega" value={dato3} readonly=""></lightning-input>
+                            </div>
+                            <div class="slds-size_1-of-2">
+                                <lightning-input label="%Conexion" value={dato4} readonly=""></lightning-input>
+                            </div>
+                            <div class="slds-size_1-of-2">
+                                <lightning-input label="%Desconexion" value={dato5} readonly=""></lightning-input>
+                            </div>
+                        </div>
+                    </lightning-card>
+                </div>
+                <!--Tercer Componente-->
+                <div class="slds-col">
+                    <lightning-card class="my-card" icon-name="standard:timesheet_entry" title="Poliza">
+                        <div class="slds-p-left_medium slds-m-bottom_xx-small" style="margin-bottom: 25px;">
+                            <div class="slds-size_1-of-2">
+                                <lightning-input label="Numero de poliza" value={dato1} readonly=""></lightning-input>
+                            </div>
+                            <div class="slds-size_1-of-2">
+                                <lightning-input label="Producto" value={dato1} readonly=""></lightning-input>
+                            </div>
+                            <div class="slds-size_1-of-2">
+                                <lightning-input label="Plan" value={dato3} readonly=""></lightning-input>
+                            </div>
+                            <div class="slds-size_1-of-2">
+                                <lightning-input label="Fecha Inicio Vigencia" value={dato4} readonly="">
+                                </lightning-input>
+                            </div>
+                            <div class="slds-size_1-of-2">
+                                <lightning-input label="Fecha fin vigencia" value={dato5} readonly=""></lightning-input>
+                            </div>
+
+                        </div>
+
+                    </lightning-card>
+                </div>
+            </div>
+        </lightning-record-view-form>
+    </article>
+</template>

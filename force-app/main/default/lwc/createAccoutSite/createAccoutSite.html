@@ -1,0 +1,71 @@
+<template>
+    <lightning-card  title="New Account Site">
+
+        <div class="slds-wrap slds-grid">
+            <div class="slds-col slds-size_6-of-12 slds-p-horizontal--small slds-m-bottom--medium">
+                <p>
+                    <lightning-input label="Site Name" type="text" value={scoreObName} name="scoreName"
+                        onchange={scoreHandleChange}></lightning-input>
+                </p>
+            </div>
+            <div class="slds-col slds-size_6-of-12 slds-p-horizontal--small slds-m-bottom--medium">
+                <p>
+                    <lightning-input label="Account" type="email" value={scoreObjEmail} name="scoreEmail"
+                        onchange={scoreHandleChange}></lightning-input>
+                </p>
+            </div>
+            <div class="slds-col slds-size_6-of-12 slds-p-horizontal--small slds-m-bottom--medium">
+                <p>
+                    <lightning-input label="Same Addressas Account" type="checkbox" name="input1"></lightning-input>
+                </p>
+            </div>
+            <div class="slds-col slds-size_6-of-12 slds-p-horizontal--small slds-m-bottom--medium">
+                <p>
+                    <lightning-input label="Site Adrdress" type="text" value={scoreObjCity} name="scoreCity"
+                        onchange={scoreHandleChange}></lightning-input>
+                </p>
+            </div>
+            <div class="slds-col slds-size_6-of-12 slds-p-horizontal--small slds-m-bottom--medium">
+                <p>
+                    <lightning-input label="Site City" type="Number" value={scoreObjAnnual} name="scoreAnnual"
+                        onchange={scoreHandleChange}></lightning-input>
+                </p>
+            </div>
+            <div class="slds-col slds-size_6-of-12 slds-p-horizontal--small slds-m-bottom--medium">
+                <p>
+                    <lightning-input label="Site State / Province" type="text" value={scoreObjDesignations}
+                        name="scoreDesignations" onchange={scoreHandleChange}></lightning-input>
+                </p>
+            </div>
+            <div class="slds-col slds-size_6-of-12 slds-p-horizontal--small slds-m-bottom--medium">
+                <p>
+                    <lightning-input label="Site Zip / Postal Code" type="text" value={scoreObjDesignations}
+                        name="scoreDesignations" onchange={scoreHandleChange}></lightning-input>
+                </p>
+            </div>
+            <div class="slds-col slds-size_6-of-12 slds-p-horizontal--small slds-m-bottom--medium">
+                <p>
+                    <lightning-input label="Site Location" type="text" value={scoreObjDesignations}
+                        name="scoreDesignations" onchange={scoreHandleChange}></lightning-input>
+                </p>
+            </div>
+            <div class="slds-col slds-size_6-of-12 slds-p-horizontal--small slds-m-bottom--medium">
+                <p>
+                    <lightning-input label="DMS Site ID" type="text" value={scoreObjDesignations}
+                        name="scoreDesignations" onchange={scoreHandleChange}></lightning-input>
+                </p>
+            </div>
+            <div class="slds-col slds-size_6-of-12 slds-p-horizontal--small slds-m-bottom--medium">
+                <p>
+                    <lightning-input label="Reference in Certificate" type="text" value={scoreObjDesignations}
+                        name="scoreDesignations" onchange={scoreHandleChange}></lightning-input>
+                </p>
+            </div>
+            <br /> <br />
+            <div class="slds-text-align--center slds-m-top--medium" style="text-align:center; width:40px; margin:auto;">
+                <lightning-button type="brand" label="Save" variant="brand" size="small" onclick={submitAction}>
+                </lightning-button>
+            </div>
+        </div>
+    </lightning-card>
+</template>

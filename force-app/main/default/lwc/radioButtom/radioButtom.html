@@ -1,0 +1,41 @@
+<template>
+    <lightning-radio-group name="radioGroup" label="Radio Group" options={options} value={value} type="radio">
+    </lightning-radio-group>
+
+    <lightning-input type="checkbox" label="Red" checked> </lightning-input>
+    <lightning-input type="checkbox"> </lightning-input>
+
+
+
+
+    <label class="slds-radio__label">
+
+        <div class="slds-grid slds-wrap">
+            <div class="slds-col slds-size_1-of-12" style="margin-top:10px;">
+                <input type="radio" name="Cert" />
+                <input type="radio" name="Cert1" />
+                <input type="radio" checked name="Cert" 
+                                              />
+            </div>
+            <div class="slds-col slds-size_10-of-12" style="text-align:left">
+                <span class="slds-radio_faux" style="accent-color:rgb(81, 20, 224);"></span>
+                <span class="slds-form-element__label ">
+                    <div style="text-align:start;">
+                        <lightning-formatted-text class="slds-text-heading_medium"
+                            value="Cristhian Arevalo Diana Arevalo">
+                        </lightning-formatted-text>
+                        <lightning-formatted-text class="slds-text-heading_medium"
+                            value=" Diana Arevalo">
+                        </lightning-formatted-text>
+                    </div>
+                    <span class="slds-align-middle">
+                        <div class="slds-m-top_small prodDetailClass" style="margin-left:30px;">
+                            Register by
+                        </div>
+                    </span>
+                </span>
+            </div>
+        </div>
+    </label>
+
+</template>

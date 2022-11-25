@@ -1,0 +1,27 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Site Names" icon-name="standard:account">
+        <p class="slds-p-horizontal_small">
+            <c-searchcomponent
+                obj-name="Contact"
+                icon-name="standard:contact"
+                label-name=""
+                placeholder="Search" 
+                fields={fields}
+                display-fields={displayFields}
+                onlookup={handleLookup} >
+            </c-searchcomponent>
+        </p>
+
+
+        <div class="demo-only demo-only--sizing slds-grid slds-wrap">
+            <div class=" slds-p-left_large slds-size_1-of-2">
+                <lightning-input type="text"></lightning-input>
+            </div>
+            <div class="slds-p-left_large slds-size_1-of-2 slds-align_absolute-center">
+                <lightning-input type="checkbox" label="Primary" name="input1"></lightning-input>
+            </div>
+            </div>
+
+        <lightning-button variant="brand" label="Add" title="Primary action" class="slds-p-top_x-large slds-p-left_large"></lightning-button>
+    </lightning-card>
+</template>
